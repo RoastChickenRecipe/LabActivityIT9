@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 
 class indexController extends Controller
 {
-    public function viewIndex(){
-        return view('index');
+    public function viewIndex(){ 
+        $name = '';
+        $contact = '';
+        return view('index', ['name'=>$name, 'contact'=>$contact]);
     }
 
     public function newUser(){
@@ -18,7 +20,6 @@ class indexController extends Controller
     public function displayUser(indexRequest $request){
         $name = $request->name;
         $contact = $request->contact;
-
         return view('index', ['name'=>$name, 'contact'=>$contact]);
     }
 

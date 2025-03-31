@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="row text-center">
-                        <div class="col col-7">
+                        <div class="col col-7">                      
                             <div style="width: auto; height:auto; background-color:rgb(92, 116, 174); color:white; border-radius:5px;">
                                 <h5>{{$name}}</h5>
                             </div>

@@ -25,7 +25,7 @@
                                 </div>
                                 <input type="text" name="name" class="form-control" value="{{old('name')}}">
                                 @error('name')
-                                    <span>{{$message}}</span>
+                                    <h5 style="color: red">{{$message}}</h5>
                                 @enderror
                             </div>
                             <div class="col col-6 pt-2">
@@ -34,7 +34,7 @@
                                 </div>
                                 <input type="text" name="contact" class="form-control" value="{{old('contact')}}">
                                 @error('contact')
-                                    <span>{{$message}}</span>
+                                    <h5 style="color: red">{{$message}}</h5>
                                 @enderror
                             </div>
                         </div>
